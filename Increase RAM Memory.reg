@@ -1,0 +1,7 @@
+Windows Registry Editor Version 5.00	 Registry By youtube.com/ripexs
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\default\ApplicationManagement\AllowGameDVR]
+
+"value"=dword:00000000
+

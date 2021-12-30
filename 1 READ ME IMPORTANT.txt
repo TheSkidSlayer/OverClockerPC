@@ -1,0 +1,23 @@
+Improve Ping made by vanis#0006
+
+Run Keyboard tweak
+Run Mouse tweak
+       
+        -Important-
+
+ Run "ImProvePingMadeByvanis#0006" ( For Ethernet and Wifi )
+
+ Run "TCPOptimizer" (To See Setting are Picture)
+ReBoot when it ask
+
+Then run Dns Jumper use "Google Public DNS"
+
+        	-Tips-
+
+Run TimerResolution when you play anygame
+It will boost your game ping and fps
+		-Me-
+i got 40 ping tho my old is 100-120
+
+if it not down your ping to 40 or more its the best your wifi/pc can run
+vanis#0006

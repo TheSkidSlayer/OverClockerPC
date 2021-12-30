@@ -1,0 +1,135 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile]
+"NetworkThrottlingIndex"=dword:0000000a
+
+;Disable Nagle's Algorithm
+
+[HKey_Local_Machine\System\CurrentControlSet\Services\Tcpip\Parameters\Interfaces]
+"TcpAckFrequency"=dword:00000000
+"TCPNoDelay"=dword:00000000
+
+
+;### Or uncheck QoS in netwerk settings (WinVista/7+)
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\QoS]
+"Tcp Autotuning Level"="Off"
+;"Tcp Autotuning Level"="Highly Restricted"
+;"Tcp Autotuning Level"="Restricted"
+;"Tcp Autotuning Level"="Normal"
+
+"Application DSCP Marking Request"="Ignored"
+;"Application DSCP Marking Request"="Allowed"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\Tcpip\QoS]
+"Do not use NLA"="1"
+
+;### XP to show QoS in network settings
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters]
+"DisableUserTOSSetting"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\NlaSvc\Parameters\Internet]
+"CorpLocationProbeTimeout"=dword:0000001e
+"LdapTimeoutMs"=dword:00001388
+"ShowDomainEndpointInterfaces"=dword:00000001
+"EnableNoGatewayLocationDetection"=dword:00000001
+"MinimumInternetHopCount"=dword:00000002
+
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\LanmanServer\Parameters]
+"autodisconnect"=dword:ffffffff
+"Size"=dword:00000003
+"EnableOplocks"=dword:00000000
+"IRPStackSize"=dword:00000020
+"SharingViolationDelay"=dword:00000000
+"SharingViolationRetries"=dword:00000000
+
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters]
+"DelayedAckFrequency"=dword:00000001
+"DelayedAckTicks"=dword:00000001
+"CongestionAlgorithm"=dword:00000001
+"MultihopSets"=dword:0000000f
+"FastCopyReceiveThreshold"=dword:00004000
+"FastSendDatagramThreshold"=dword:00004000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\AFD\Parameters]
+"DefaultReceiveWindow"=dword:00004000
+"DefaultSendWindow"=dword:00004000
+"FastCopyReceiveThreshold"=dword:00004000
+"FastSendDatagramThreshold"=dword:00004000
+"DynamicSendBufferDisable"=dword:00000000
+"IgnorePushBitOnReceives"=dword:00000001
+"NonBlockingSendSpecialBuffering"=dword:00000001
+"DisableRawSecurity"=dword:00000001
+
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters]
+"DefaultTTL"=dword:00000040
+"DisableTaskOffload"=dword:00000001
+"EnableConnectionRateLimiting"=dword:00000000
+"EnableDCA"=dword:00000001
+"EnablePMTUBHDetect"=dword:00000000
+"EnablePMTUDiscovery"=dword:00000001
+"EnableRSS"=dword:00000001
+"TcpTimedWaitDelay"=dword:0000001e
+"EnableWsd"=dword:00000000
+"GlobalMaxTcpWindowSize"=dword:0000ffff
+"MaxConnectionsPer1_0Server"=dword:000000a
+"MaxConnectionsPerServer"=dword:000000a
+"MaxFreeTcbs"=dword:00010000
+"EnableTCPA"=dword:00000000
+"Tcp1323Opts"=dword:00000001
+"TcpCreateAndConnectTcbRateLimitDepth"=dword:00000000
+"TcpMaxDataRetransmissions"=dword:00000003
+"TcpMaxDupAcks"=dword:00000002
+"TcpMaxSendFree"=dword:0000ffff
+"TcpNumConnections"=dword:00fffffe
+"MaxHashTableSize"=dword:00010000
+"MaxUserPort"=dword:0000fffe
+"SackOpts"=dword:00000001
+"SynAttackProtect"=dword:00000001
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSMQ\Parameters]
+"TCPNoDelay"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\ServiceProvider]
+"LocalPriority"=dword:00000004
+"HostsPriority"=dword:00000005
+"DnsPriority"=dword:00000006
+"NetbtPriority"=dword:00000007
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile]
+"NetworkThrottlingIndex"=dword:ffffffff
+"SystemResponsiveness"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Psched]
+"NonBestEffortLimit"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Psched]
+"NonBestEffortLimit"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters]
+"MaxCmds"=dword:0000001e
+"MaxThreads"=dword:0000001e
+"MaxCollectionCount"=dword:00000020
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters]
+"IRPStackSize"=dword:00000032
+"SizReqBuf"=dword:00004410
+"Size"=dword:00000003
+"MaxWorkItems"=dword:00002000
+"MaxMpxCt"=dword:00000800
+"MaxCmds"=dword:00000800
+"DisableStrictNameChecking"=dword:00000001
+
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\LanmanServer\Parameters]
+"autodisconnect"=dword:ffffffff
+"Size"=dword:00000003
+"EnableOplocks"=dword:00000000
+"IRPStackSize"=dword:00000020
+"SharingViolationDelay"=dword:00000000
+"SharingViolationRetries"=dword:00000000
+

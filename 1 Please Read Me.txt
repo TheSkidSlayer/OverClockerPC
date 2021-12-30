@@ -1,0 +1,4 @@
+Nvidia Folder ONLY for Nvidia User
+
+AMD Folder ONLY for AMD User
+vanis#0006
